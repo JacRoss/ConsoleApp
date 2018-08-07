@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "eaf1fe09ec05558b792288b9a03822d8",
+    "content-hash": "c7a4e7d88cb6b39ad5ba49d507294dfd",
     "packages": [
         {
             "name": "jackross/sckobki-helper",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JacRoss/sckobki.git",
-                "reference": "9588d48c9fe482ae8969de82b12415ce9217465c"
+                "reference": "40569012b3b17cff45ca53b9c1b80a2318fe51ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JacRoss/sckobki/zipball/9588d48c9fe482ae8969de82b12415ce9217465c",
-                "reference": "9588d48c9fe482ae8969de82b12415ce9217465c",
+                "url": "https://api.github.com/repos/JacRoss/sckobki/zipball/40569012b3b17cff45ca53b9c1b80a2318fe51ad",
+                "reference": "40569012b3b17cff45ca53b9c1b80a2318fe51ad",
                 "shasum": ""
             },
             "require": {
@@ -34,7 +34,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "sckobki validator",
-            "time": "2018-08-05 13:06:00"
+            "time": "2018-08-07 10:32:09"
         },
         {
             "name": "jackross/sum",
@@ -42,12 +42,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JacRoss/Sum.git",
-                "reference": "af89111bb8dd23a88b3ce0764d80acd71964c54d"
+                "reference": "8a5e721b3e87ff92a1fe527faca2553dac1ac939"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JacRoss/Sum/zipball/af89111bb8dd23a88b3ce0764d80acd71964c54d",
-                "reference": "af89111bb8dd23a88b3ce0764d80acd71964c54d",
+                "url": "https://api.github.com/repos/JacRoss/Sum/zipball/8a5e721b3e87ff92a1fe527faca2553dac1ac939",
+                "reference": "8a5e721b3e87ff92a1fe527faca2553dac1ac939",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +60,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-08-04 21:18:06"
+            "time": "2018-08-07 11:39:45"
         },
         {
             "name": "symfony/console",
@@ -1505,72 +1505,6 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2016-10-03T07:35:21+00:00"
-        },
-        {
-            "name": "symfony/phpunit-bridge",
-            "version": "v4.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "3c30714807f34b7de710cc33eb612cd42cf683b0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/3c30714807f34b7de710cc33eb612cd42cf683b0",
-                "reference": "3c30714807f34b7de710cc33eb612cd42cf683b0",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "conflict": {
-                "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0"
-            },
-            "suggest": {
-                "ext-zip": "Zip support is required when using bin/simple-phpunit",
-                "symfony/debug": "For tracking deprecated interfaces usages at runtime with DebugClassLoader"
-            },
-            "bin": [
-                "bin/simple-phpunit"
-            ],
-            "type": "symfony-bridge",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.1-dev"
-                },
-                "thanks": {
-                    "name": "phpunit/phpunit",
-                    "url": "https://github.com/sebastianbergmann/phpunit"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ],
-                "psr-4": {
-                    "Symfony\\Bridge\\PhpUnit\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony PHPUnit Bridge",
-            "homepage": "https://symfony.com",
-            "time": "2018-07-26T08:55:25+00:00"
         },
         {
             "name": "theseer/tokenizer",

@@ -25,7 +25,7 @@ class SumCommand extends Command
     private function sum($a, $b): string
     {
         try {
-            return sprintf('<info>%s</info>', (new Sum())->sum($a, $b));
+            return sprintf('<info>%s</info>', Math::saySum($a, $b));
         } catch (\TypeError $error) {
             return '<error>all arguments must be numbers</error>';
         }
