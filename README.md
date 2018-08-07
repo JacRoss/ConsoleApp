@@ -6,3 +6,8 @@
 
 #1.3.11
 `php artisan brackets:validate <$string>`
+
+#Tests
+`composer install --dev`
+\
+`composer test`
