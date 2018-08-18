@@ -32,7 +32,7 @@ class ClientCommand extends Command
         $socket->bind($input->getArgument('address'), (int)$input->getArgument('port'));
 
         $socket->connect(function (Connection $connection) use ($output) {
-            $output->writeln('<info>New Connection</info>');
+            $output->writeln('<info>Connection to server</info>');
             $connection->on('data', function ($data) use ($output, $connection) {
                 $output->writeln(sprintf('[Answer]:%s', $data));
                 $question = $this->question();
