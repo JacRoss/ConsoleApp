@@ -127,6 +127,8 @@ class Socket
             $timeout,
             STREAM_CLIENT_CONNECT | STREAM_CLIENT_ASYNC_CONNECT
         );
+
+        $this->setBlocking(false);
     }
 
 }

@@ -57,7 +57,7 @@ class Connection extends EventEmitter
     public function handleData($stream)
     {
         $payload = '';
-        while (($data = stream_get_contents($stream, 5)) !== '') {
+        while (($data = stream_get_contents($stream, 2048)) !== '') {
             $payload .= $data;
         }
 
