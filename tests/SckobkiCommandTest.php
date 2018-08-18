@@ -1,5 +1,6 @@
 <?php
 
+use Jackross\Commands\SckobkiCommand;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
@@ -11,7 +12,7 @@ class SckobkiCommandTest extends TestCase
     public function __construct(?string $name = null, array $data = [], string $dataName = '')
     {
         $application = new Application();
-        $application->add(new\Jackross\SckobkiCommand());
+        $application->add(new SckobkiCommand());
         $this->command = $application->find('brackets:validate');
 
         parent::__construct($name, $data, $dataName);

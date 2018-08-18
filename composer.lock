@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3fcc15f65155ff6242c9e97f22202c7",
+    "content-hash": "d171289d072163552868cd352a5aa060",
     "packages": [
+        {
+            "name": "evenement/evenement",
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/igorw/evenement.git",
+                "reference": "531bfb9d15f8aa57454f5f0285b18bec903b8fb7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/igorw/evenement/zipball/531bfb9d15f8aa57454f5f0285b18bec903b8fb7",
+                "reference": "531bfb9d15f8aa57454f5f0285b18bec903b8fb7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Evenement": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                }
+            ],
+            "description": "Événement is a very simple event dispatching library for PHP",
+            "keywords": [
+                "event-dispatcher",
+                "event-emitter"
+            ],
+            "time": "2017-07-23T21:35:13+00:00"
+        },
         {
             "name": "jackross/sckobki-helper",
             "version": "dev-master",
@@ -42,12 +85,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JacRoss/Strategy.git",
-                "reference": "0dbc0418b179b94f263f8e47f726e1f12b2b50b6"
+                "reference": "b4fd548cebc392e1eefa64b919806c928977a92c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JacRoss/Strategy/zipball/0dbc0418b179b94f263f8e47f726e1f12b2b50b6",
-                "reference": "0dbc0418b179b94f263f8e47f726e1f12b2b50b6",
+                "url": "https://api.github.com/repos/JacRoss/Strategy/zipball/b4fd548cebc392e1eefa64b919806c928977a92c",
+                "reference": "b4fd548cebc392e1eefa64b919806c928977a92c",
                 "shasum": ""
             },
             "require": {
@@ -66,7 +109,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2018-08-10T15:03:47+00:00"
+            "time": "2018-08-10T15:57:46+00:00"
         },
         {
             "name": "jackross/sum",
@@ -93,6 +136,47 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "time": "2018-08-07T11:39:45+00:00"
+        },
+        {
+            "name": "react/event-loop",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/event-loop.git",
+                "reference": "0266aff7aa7b0613b1f38a723e14a0ebc55cfca3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/0266aff7aa7b0613b1f38a723e14a0ebc55cfca3",
+                "reference": "0266aff7aa7b0613b1f38a723e14a0ebc55cfca3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.35 || ^5.7 || ^6.4"
+            },
+            "suggest": {
+                "ext-event": "~1.0 for ExtEventLoop",
+                "ext-pcntl": "For signal handling support when using the StreamSelectLoop"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\EventLoop\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "ReactPHP's core reactor event loop that libraries can use for evented I/O.",
+            "keywords": [
+                "asynchronous",
+                "event-loop"
+            ],
+            "time": "2018-07-11T14:37:46+00:00"
         },
         {
             "name": "symfony/console",

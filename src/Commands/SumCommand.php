@@ -1,7 +1,8 @@
 <?php
 
-namespace Jackross;
+namespace Jackross\Commands;
 
+use Jackross\Math;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

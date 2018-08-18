@@ -1,19 +1,18 @@
 <?php
 
-use Jackross\Commands\SumCommand;
-use PHPUnit\Framework\TestCase;
+use Jackross\Commands\CalculatorCommand;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
 
-class SumCommandTest extends TestCase
+class CalculatorCommanTest extends \PHPUnit\Framework\TestCase
 {
     private $command;
 
     public function __construct(?string $name = null, array $data = [], string $dataName = '')
     {
         $application = new Application();
-        $application->add(new  SumCommand());
-        $this->command = $application->find('math:sum');
+        $application->add(new  CalculatorCommand());
+        $this->command = $application->find('math:calc');
 
         parent::__construct($name, $data, $dataName);
     }
@@ -27,31 +26,17 @@ class SumCommandTest extends TestCase
         ]);
     }
 
-    public function testInvalidArgument()
-    {
-        $commandTester = new CommandTester($this->command);
-        $commandTester->execute([
-            'command' => $this->command->getName(),
-            'a' => 'a',
-            'b' => 1,
-        ]);
-
-        $this->assertContains('all arguments must be numbers', $commandTester->getDisplay());
-    }
-
     public function testResult()
     {
         $a = 1;
         $b = 2;
-        $result = sprintf("Dmitry says, that %s + %s = %s", $a, $b, $a + $b);
 
         $commandTester = new CommandTester($this->command);
         $commandTester->execute([
             'command' => $this->command->getName(),
-            'a' => $a,
-            'b' => $b,
+            'ab' => sprintf('%s+%s', $a, $b),
         ]);
 
-        $this->assertContains($result, $commandTester->getDisplay());
+        $this->assertContains((string)($a + $b), $commandTester->getDisplay());
     }
 }

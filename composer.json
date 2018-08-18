@@ -7,7 +7,9 @@
     "symfony/console": "^4.1",
     "jackross/sckobki-helper": "dev-master",
     "jackross/sum": "dev-master",
-    "jackross/strategy": "dev-master"
+    "jackross/strategy": "dev-master",
+    "react/event-loop": "^1.0",
+    "evenement/evenement": "^3.0"
   },
   "autoload": {
     "psr-4": {
