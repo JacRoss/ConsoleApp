@@ -1,11 +1,12 @@
 # ConsoleApp
 
 
-# 1.3.10
-`php artisan math:sum <$a> <$b>`
+# 1 модуль. 5 занятие. 14 задание.
+`php artisan server:run <ip> <port>`\
+`php artisan server:math <ip> <port>`
 
-# 1.3.11
-`php artisan brackets:validate <$string>`
+# 1 модуль. 5 занятие. 15 задание.
+`php artisan math:calc  "$a $operator $b"`
 
 # Tests
 `composer install --dev`
