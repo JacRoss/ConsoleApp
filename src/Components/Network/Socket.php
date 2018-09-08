@@ -115,6 +115,10 @@ class Socket
         }
     }
 
+    /**
+     * @param int $timeout
+     * @throws SocketException
+     */
     private function createConnectResource(int $timeout = 0): void
     {
         $this->resource = stream_socket_client(sprintf(
@@ -127,6 +131,10 @@ class Socket
             $timeout,
             STREAM_CLIENT_CONNECT | STREAM_CLIENT_ASYNC_CONNECT
         );
+
+        if ($this->resource === false) {
+            throw new  SocketException($errstr);
+        }
 
         $this->setBlocking(false);
     }

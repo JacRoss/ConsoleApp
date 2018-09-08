@@ -39,7 +39,7 @@ class ClientCommand extends Command
                 $connection->write($question);
 
             });
-        }, 60);
+        });
 
     }
 

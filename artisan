@@ -3,7 +3,7 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Jackross\Commands\{CalculatorCommand, SumCommand, SckobkiCommand, ServerCommand, ClientCommand};
+use Jackross\Commands\{CalculatorCommand, SumCommand, SckobkiCommand, ServerCommand, ClientCommand, HttpServer};
 
 $application = new \Symfony\Component\Console\Application('Console App');
 $application->add(new SumCommand());
@@ -11,4 +11,5 @@ $application->add(new SckobkiCommand());
 $application->add(new CalculatorCommand());
 $application->add(new ServerCommand());
 $application->add(new ClientCommand());
+$application->add(new HttpServer());
 $application->run();

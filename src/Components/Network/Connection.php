@@ -47,6 +47,7 @@ class Connection extends EventEmitter
     private function subscription(): void
     {
         $this->loop->addWriteStream($this->resource, function () {
+            $this->emit('sent', []);
         });
         $this->loop->addReadStream($this->resource, [$this, 'handleData']);
     }
