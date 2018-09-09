@@ -37,7 +37,7 @@ class BaseRequest
         $this->path = $url['path'];
 
         if (isset($url['query'])) {
-            $this->query = parse_str($url['query']);
+            parse_str($url['query'], $this->query);
         }
     }
 
